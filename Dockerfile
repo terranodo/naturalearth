@@ -7,7 +7,7 @@ RUN wget "http://naciscdn.org/naturalearth/packages/natural_earth_vector.sqlite.
 
 RUN unzip natural_earth_vector.sqlite.zip
 
-FROM terranodo/datasette:spatialiate
+FROM terranodo/datasette:spatialite
 
 COPY --from=build packages/natural_earth_vector.sqlite /natural_earth_vector.sqlite
 
