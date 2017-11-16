@@ -1,7 +1,7 @@
 FROM debian as build
 
-RUN sudo apt-get update
-RUN sudo apt-get -y install wget
+RUN apt-get update
+RUN apt-get -y install wget
 
 RUN wget "http://naciscdn.org/naturalearth/packages/natural_earth_vector.sqlite.zip"
 
